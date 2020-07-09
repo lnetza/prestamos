@@ -19,15 +19,21 @@ function App() {
   let componente;
 
   if(cargando){
+
     componente=<Spinner/>
+
   } else if(total===0){
+
     componente= <Mensaje/>
+
   }else{
+
     componente = <Resultado
                     total={total}
                     plazo={plazo}
                     cantidad={cantidad}
                   />
+                  
   }
 
   return (
